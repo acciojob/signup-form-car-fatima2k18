@@ -8,16 +8,17 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
+	<form method="post">
 		<input type="text" placeholder="Name" id="name" required>
 		<input type="email" placeholder="Email" id="e-mail" required>
 		<label> 
 		<input type="radio" name="gender"  value="gender_m">male
 		</label>
 		<label>
-		<input type="radio" name="radio"  value="gender_f">female
+		<input type="radio" name="gender"  value="gender_f">female
 			</label>
-		<select name="carBrand" required>
+		<label for="cars">Car Brands: </label>
+		<select id="cars"  required>
 			<option value="" disabled selected>Please choose an option</option>
 			<option value="option1" >Maruti </option>
 			<option value="option2">Bolero</option>
@@ -26,12 +27,12 @@
 		</select>
 		<input type="number" id="age" placeholder="Age"> 
 		<input type="date" id="dob"  required>
-		<input type="number" id="tel" placeholder=xxx-xxx-xxxx>
+		<input type="number" id="tel" placeholder="xxx-xxx-xxxx">
 		<input type="password" id="password" placeholder=Password required>
 		<br>
 	    <label>
       <input type="checkbox" name="tos" id="tos" required> I agree to the Terms of Service
-    <input type="button" value="Sign up"> 
+    <button type="button" value="Sign up"></button> 
 		</label>
 		
 		
